@@ -32,7 +32,7 @@ describe('Lock File', () => {
     const contentServices = new ContentServicesPage();
     const adminUser = new UserModel();
     const managerUser = new UserModel();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

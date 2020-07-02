@@ -33,7 +33,7 @@ describe('Checkbox Widget', () => {
     let appModel;
     let deployedApp, process;
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
     const applicationsService = new ApplicationsUtil(apiService);
 

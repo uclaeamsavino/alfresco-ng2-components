@@ -31,7 +31,7 @@ describe('Viewer', () => {
     const contentServicesPage = new ContentServicesPage();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);
 

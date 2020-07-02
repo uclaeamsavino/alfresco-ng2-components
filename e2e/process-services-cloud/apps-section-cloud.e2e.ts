@@ -27,7 +27,7 @@ describe('Applications list', () => {
     const navigationBarPage = new NavigationBarPage();
     const appListCloudPage = new AppListCloudPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const applicationsService = new Application(apiService);
     const identityService = new IdentityService(apiService);
 

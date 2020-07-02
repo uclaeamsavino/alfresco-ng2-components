@@ -23,7 +23,7 @@ import { UsersActions } from '../../actions/users.actions';
 
 describe('Datatable component - selection', () => {
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     const dataTablePage = new DataTablePage();

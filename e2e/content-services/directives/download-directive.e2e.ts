@@ -64,7 +64,7 @@ describe('Version component actions', () => {
         location: browser.params.resources.Files.ADF_DOCUMENTS.TEXT_FOLDER.folder_location
     });
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);
 

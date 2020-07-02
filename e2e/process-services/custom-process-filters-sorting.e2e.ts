@@ -32,7 +32,7 @@ describe('Sorting for process filters', () => {
     const processFiltersPage = new ProcessFiltersPage();
     const filtersPage = new FiltersPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let tenantId, appId, user, processesQuery;

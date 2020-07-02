@@ -26,7 +26,7 @@ describe('Notifications Component', () => {
     const loginPage = new LoginSSOPage();
     const notificationPage = new NotificationDemoPage();
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     let acsUser: UserModel;

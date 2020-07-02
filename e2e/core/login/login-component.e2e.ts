@@ -49,7 +49,7 @@ describe('Login component', () => {
         required: 'Required'
     };
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

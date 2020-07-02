@@ -42,7 +42,7 @@ describe('Task', () => {
         const taskDetailsPage = new TaskDetailsPage();
         const taskFiltersDemoPage = new TaskFiltersDemoPage();
 
-        const apiService = new ApiService();
+        const apiService = new ApiService({ provider: 'BPM' });
         const usersActions = new UsersActions(apiService);
 
         let appId: number, user: UserModel;
@@ -177,7 +177,7 @@ describe('Task', () => {
         const processServiceTabBarPage = new ProcessServiceTabBarPage();
         const appSettingsToggles = new AppSettingsTogglesPage();
         const taskFiltersDemoPage = new TaskFiltersDemoPage();
-        const apiService = new ApiService();
+        const apiService = new ApiService({ provider: 'BPM' });
 
         let user;
         let appId: number;

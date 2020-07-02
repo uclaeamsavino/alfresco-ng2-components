@@ -31,7 +31,7 @@ describe('Process List - Pagination when adding processes', () => {
     const processFiltersPage = new ProcessFiltersPage();
     const processDetailsPage = new ProcessDetailsPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
     const processUtil = new ProcessUtil(apiService);
     const applicationsService = new ApplicationsUtil(apiService);

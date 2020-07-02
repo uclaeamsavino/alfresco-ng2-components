@@ -27,7 +27,7 @@ describe('About Process Services', () => {
 
     let user;
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async() => {

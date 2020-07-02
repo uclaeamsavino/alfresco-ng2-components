@@ -38,7 +38,7 @@ describe('Start Task - Task App', () => {
     const tasks = ['Standalone task', 'Completed standalone task', 'Add a form', 'Remove form'];
     const noFormMessage = 'No forms attached';
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

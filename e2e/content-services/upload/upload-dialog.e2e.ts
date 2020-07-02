@@ -32,7 +32,7 @@ describe('Upload component', () => {
     const uploadToggles = new UploadTogglesPage();
     const loginPage = new LoginSSOPage();
     const versionManagePage = new VersionManagePage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
 
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);

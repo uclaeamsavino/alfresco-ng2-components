@@ -29,7 +29,7 @@ describe('Start Process', () => {
     const processCloudDemoPage = new ProcessCloudDemoPage();
     const startProcessPage = new StartProcessCloudPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const identityService = new IdentityService(apiService);
     const groupIdentityService = new GroupIdentityService(apiService);
 

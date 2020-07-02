@@ -30,7 +30,7 @@ describe('Create library directive', () => {
     const createLibraryDialog = new CreateLibraryDialogPage();
     const customSourcesPage = new CustomSourcesPage();
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const visibility = {

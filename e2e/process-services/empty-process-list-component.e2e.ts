@@ -36,7 +36,7 @@ describe('Empty Process List Test', () => {
     const processDetailsPage = new ProcessDetailsPage();
     const processListPage = new ProcessListPage();
     const startProcessPage = new StartProcessPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
 
     let user;
 

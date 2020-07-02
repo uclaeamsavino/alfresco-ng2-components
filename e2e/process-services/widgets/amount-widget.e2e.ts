@@ -33,7 +33,7 @@ describe('Amount Widget', () => {
     let deployedApp, process;
     let processUserModel;
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const applicationsService = new ApplicationsUtil(apiService);
     const usersActions = new UsersActions(apiService);
     const processUtil = new ProcessUtil(apiService);

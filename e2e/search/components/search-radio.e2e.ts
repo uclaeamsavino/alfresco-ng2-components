@@ -41,7 +41,7 @@ describe('Search Radio Component', () => {
     const searchResults = new SearchResultsPage();
 
     const acsUser = new UserModel();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
 
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);

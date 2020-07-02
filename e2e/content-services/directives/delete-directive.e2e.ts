@@ -32,7 +32,7 @@ import { UsersActions } from '../../actions/users.actions';
 
 describe('Delete Directive', () => {
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const loginPage = new LoginSSOPage();
     const contentServicesPage = new ContentServicesPage();
     const paginationPage = new PaginationPage();

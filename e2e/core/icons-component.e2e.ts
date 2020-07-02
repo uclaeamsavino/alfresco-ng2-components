@@ -28,7 +28,7 @@ describe('Universal Icon component', () => {
     const navigationBarPage = new NavigationBarPage();
     const iconsPage = new IconsPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

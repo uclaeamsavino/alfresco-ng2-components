@@ -44,7 +44,7 @@ describe('Task claim/release', () => {
     const taskHeaderCloudPage = new TaskHeaderCloudPage();
     const taskFormCloudComponent = new TaskFormCloudComponent();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const processDefinitionService = new ProcessDefinitionsService(apiService);
     const processInstancesService = new ProcessInstancesService(apiService);
 

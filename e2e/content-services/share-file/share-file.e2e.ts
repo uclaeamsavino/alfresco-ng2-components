@@ -34,7 +34,7 @@ import { UsersActions } from '../../actions/users.actions';
 
 describe('Share file', () => {
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
     const loginPage = new LoginSSOPage();
     const contentServicesPage = new ContentServicesPage();

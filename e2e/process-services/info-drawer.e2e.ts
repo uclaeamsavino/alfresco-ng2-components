@@ -45,7 +45,7 @@ describe('Info Drawer', () => {
     const processServiceTabBarPage = new ProcessServiceTabBarPage();
     const processFiltersPage = new ProcessFiltersPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const applicationsService = new ApplicationsUtil(apiService);
 
     const firstComment = 'comm1';

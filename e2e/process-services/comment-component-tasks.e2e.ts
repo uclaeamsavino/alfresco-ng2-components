@@ -34,7 +34,7 @@ describe('Comment component for Processes', () => {
     const taskPage = new TasksPage();
     const commentsPage = new CommentsPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let user, appId, secondUser, newTaskId;

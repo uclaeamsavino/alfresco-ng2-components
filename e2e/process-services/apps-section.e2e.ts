@@ -33,7 +33,7 @@ describe('Modify applications', () => {
     const navigationBarPage = new NavigationBarPage();
     const processServicesPage = new ProcessServicesPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const modelActions = new ModelsActions(apiService);
     const apps = new ApplicationsUtil(apiService);
     const usersActions = new UsersActions(apiService);

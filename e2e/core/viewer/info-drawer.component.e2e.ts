@@ -30,7 +30,7 @@ describe('Info Drawer', () => {
     const loginPage = new LoginSSOPage();
     const contentServicesPage = new ContentServicesPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
     const uploadActions = new UploadActions(apiService);
     let site;

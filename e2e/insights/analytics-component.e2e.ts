@@ -34,7 +34,7 @@ describe('Analytics Smoke Test', () => {
     const reportTitle = 'New Title';
     let procUserModel: UserModel;
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

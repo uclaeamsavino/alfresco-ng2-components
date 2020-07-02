@@ -33,7 +33,7 @@ describe('Social component', () => {
     const componentVisitor = new UserModel();
     const secondComponentVisitor = new UserModel();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
     const uploadActions = new UploadActions(apiService);
 

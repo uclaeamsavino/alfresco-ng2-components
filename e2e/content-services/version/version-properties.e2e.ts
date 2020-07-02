@@ -37,7 +37,7 @@ describe('Version Properties', () => {
     const versionManagePage = new VersionManagePage();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     let acsUser: UserModel;

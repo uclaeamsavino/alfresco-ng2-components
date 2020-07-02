@@ -31,7 +31,7 @@ describe('Upload - User permission', () => {
     const loginPage = new LoginSSOPage();
     const navigationBarPage = new NavigationBarPage();
     const notificationHistoryPage = new NotificationHistoryPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const emptyFile = new FileModel({

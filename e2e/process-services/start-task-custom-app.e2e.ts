@@ -34,7 +34,7 @@ describe('Start Task - Custom App', () => {
     const attachmentListPage = new AttachmentListPage();
     const processServiceTabBarPage = new ProcessServiceTabBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
     const applicationsService = new ApplicationsUtil(apiService);
 

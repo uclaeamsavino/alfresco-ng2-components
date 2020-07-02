@@ -35,7 +35,7 @@ describe('Viewer', () => {
         'location': browser.params.resources.Files.ADF_DOCUMENTS.EXCEL_FOLDER.folder_path
     });
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);
 

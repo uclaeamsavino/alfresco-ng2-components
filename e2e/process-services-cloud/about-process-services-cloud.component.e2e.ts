@@ -25,7 +25,7 @@ describe('About Process Services Cloud', () => {
     const navigationBarPage = new NavigationBarPage();
     const aboutPage = new AboutPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const identityService  = new IdentityService(apiService);
 
     let testUser;

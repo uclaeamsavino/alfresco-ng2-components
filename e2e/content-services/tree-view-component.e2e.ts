@@ -28,7 +28,7 @@ describe('Tree View Component', () => {
     const treeViewPage = new TreeViewPage();
 
     let acsUser: UserModel;
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

@@ -42,7 +42,7 @@ describe('Task Details component', () => {
     const loginPage = new LoginSSOPage();
     const taskPage = new TasksPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
 
     let processUserModel, appModel;
     const tasks = ['Modifying task', 'Information box', 'No form', 'Not Created', 'Refreshing form', 'Assignee task', 'Attach File'];

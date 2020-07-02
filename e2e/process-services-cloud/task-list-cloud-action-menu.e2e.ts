@@ -31,7 +31,7 @@ describe('Process list cloud', () => {
         const appListCloudComponent = new AppListCloudPage();
         const tasksCloudDemoPage = new TasksCloudDemoPage();
 
-        const apiService = new ApiService();
+        const apiService = new ApiService({ provider: 'ALL' });
         const identityService = new IdentityService(apiService);
         const groupIdentityService = new GroupIdentityService(apiService);
         const processDefinitionService = new ProcessDefinitionsService(apiService);

@@ -47,7 +47,7 @@ describe('Search component - Search Page', () => {
     const searchResultPage = new SearchResultsPage();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);
 

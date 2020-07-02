@@ -33,7 +33,7 @@ describe('Attach Folder widget', () => {
     let deployedApp, process;
     let processUserModel;
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
     const processUtil = new ProcessUtil(apiService);
     const applicationsService = new ApplicationsUtil(apiService);

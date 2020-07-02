@@ -28,7 +28,7 @@ describe('Task Details - No form', () => {
 
     const loginPage = new LoginSSOPage();
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
 
     let processUserModel;
     const taskPage = new TasksPage();

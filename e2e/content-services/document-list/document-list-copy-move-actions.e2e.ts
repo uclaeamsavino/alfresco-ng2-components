@@ -36,7 +36,7 @@ describe('Document List Component', () => {
     const navigationBarPage = new NavigationBarPage();
     const contentNodeSelector = new ContentNodeSelectorDialogPage();
     const notificationHistoryPage = new NotificationHistoryPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

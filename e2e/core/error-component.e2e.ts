@@ -27,7 +27,7 @@ describe('Error Component', () => {
     const errorPage = new ErrorPage();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

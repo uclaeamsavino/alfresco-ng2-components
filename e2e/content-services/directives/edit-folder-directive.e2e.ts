@@ -39,7 +39,7 @@ describe('Edit folder directive', () => {
     const anotherAcsUser = new UserModel();
     const navigationBarPage = new NavigationBarPage();
     const notificationHistoryPage = new NotificationHistoryPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const pdfFile = new FileModel({

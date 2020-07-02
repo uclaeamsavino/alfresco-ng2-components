@@ -30,7 +30,7 @@ describe('Viewer', () => {
     const contentServicesPage = new ContentServicesPage();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
     const uploadActions = new UploadActions(apiService);
     let site;

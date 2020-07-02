@@ -31,7 +31,7 @@ describe('Comment Component', () => {
     const viewerPage: ViewerPage = new ViewerPage();
     const commentsPage: CommentsPage = new CommentsPage();
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
 
     let userFullName, nodeId;
     let acsUser: UserModel;

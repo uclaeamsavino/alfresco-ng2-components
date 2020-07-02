@@ -32,7 +32,7 @@ describe('Viewer', () => {
     const contentServicesPage = new ContentServicesPage();
     const shareDialog = new ShareDialogPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
     const uploadActions = new UploadActions(apiService);
 

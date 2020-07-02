@@ -31,7 +31,7 @@ describe('Typeahead widget', () => {
     const navigationBarPage = new NavigationBarPage();
     const widget = new Widget();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
     const applicationsService = new ApplicationsUtil(apiService);
 

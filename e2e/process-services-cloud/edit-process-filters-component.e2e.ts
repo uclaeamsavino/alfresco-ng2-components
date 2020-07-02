@@ -38,7 +38,7 @@ describe('Edit process filters cloud', () => {
     const tasksCloudDemoPage = new TasksCloudDemoPage();
     const processCloudDemoPage = new ProcessCloudDemoPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const identityService = new IdentityService(apiService);
     const groupIdentityService = new GroupIdentityService(apiService);
 

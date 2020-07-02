@@ -42,7 +42,7 @@ describe('Start Task - Custom App', () => {
     const taskListSinglePage = new TaskListDemoPage();
     const paginationPage = new PaginationPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const appsRuntime = new AppsRuntimeActions(apiService);
     const usersActions = new UsersActions(apiService);
     const applicationsService = new ApplicationsUtil(apiService);

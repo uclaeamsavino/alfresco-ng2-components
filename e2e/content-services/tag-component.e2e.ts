@@ -29,7 +29,7 @@ describe('Tag component', () => {
     const navigationBarPage = new NavigationBarPage();
 
     let acsUser: UserModel;
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

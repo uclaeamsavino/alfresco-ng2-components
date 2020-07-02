@@ -37,7 +37,7 @@ describe('Task Details - Form', () => {
     const filtersPage = new FiltersPage();
     const widget = new Widget();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const formActions = new FormModelActions(apiService);
     const usersActions = new UsersActions(apiService);
     const applicationsService = new ApplicationsUtil(apiService);

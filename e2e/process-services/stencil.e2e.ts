@@ -41,7 +41,7 @@ describe('Stencil', () => {
     const processDetailsPage = new ProcessDetailsPage();
     const processFiltersPage = new ProcessFiltersPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let user: UserModel;

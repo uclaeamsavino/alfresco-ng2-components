@@ -27,7 +27,7 @@ describe('Document List Component', () => {
     const contentServicesPage = new ContentServicesPage();
     const errorPage = new ErrorPage();
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     let privateSite;

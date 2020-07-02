@@ -38,7 +38,7 @@ describe('Pagination - returns to previous page when current is empty', () => {
     const paginationPage = new PaginationPage();
 
     const viewerPage = new ViewerPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     const acsUser = new UserModel();

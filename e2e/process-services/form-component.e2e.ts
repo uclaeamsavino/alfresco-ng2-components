@@ -27,7 +27,7 @@ describe('Form Component', () => {
     const formPage = new FormPage();
     const widget = new Widget();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let tenantId, user;

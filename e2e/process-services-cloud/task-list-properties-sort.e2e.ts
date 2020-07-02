@@ -32,7 +32,7 @@ describe('Edit task filters and task list properties', () => {
     const appListCloudComponent = new AppListCloudPage();
     const tasksCloudDemoPage = new TasksCloudDemoPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const identityService = new IdentityService(apiService);
     const groupIdentityService = new GroupIdentityService(apiService);
     const tasksService = new TasksService(apiService);

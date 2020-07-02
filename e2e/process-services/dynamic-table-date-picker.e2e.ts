@@ -37,7 +37,7 @@ describe('Dynamic Table', () => {
     const datePicker = new DatePickerCalendarPage();
     const navigationBarPage = new NavigationBarPage();
     const widget = new Widget();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let user, tenantId, appId;

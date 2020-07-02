@@ -39,7 +39,7 @@ describe('Aspect oriented config', () => {
     const contentServicesPage = new ContentServicesPage();
     const modelOneName = 'modelOne', emptyAspectName = 'emptyAspect';
     const defaultModel = 'cm', defaultEmptyPropertiesAspect = 'taggable', aspectName = 'Taggable';
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     let acsUser: UserModel;

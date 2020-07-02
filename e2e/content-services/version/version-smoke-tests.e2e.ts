@@ -38,7 +38,7 @@ describe('Version component', () => {
     const navigationBarPage = new NavigationBarPage();
     const versionManagePage = new VersionManagePage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     let acsUser: UserModel;

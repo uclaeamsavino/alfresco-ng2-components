@@ -36,7 +36,7 @@ describe('Datatable component', () => {
         'location': browser.params.resources.Files.ADF_DOCUMENTS.PNG.file_location
     });
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

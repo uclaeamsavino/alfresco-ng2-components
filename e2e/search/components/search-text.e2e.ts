@@ -37,7 +37,7 @@ describe('Search component - Text widget', () => {
     const searchDialog = new SearchDialogPage();
     const searchResultPage = new SearchResultsPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const acsUser = new UserModel();

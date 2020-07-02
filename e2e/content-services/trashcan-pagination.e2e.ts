@@ -44,7 +44,7 @@ describe('Trashcan - Pagination', () => {
     const trashcanPage = new TrashcanPage();
     const paginationPage = new PaginationPage();
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     let acsUser: UserModel;

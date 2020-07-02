@@ -71,7 +71,7 @@ describe('Document List - Pagination', () => {
     const folderTwoModel = new FolderModel({ name: 'folderTwo' });
     const folderThreeModel = new FolderModel({ name: 'folderThree' });
     const numberOfSubFolders = 6;
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

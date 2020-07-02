@@ -37,7 +37,7 @@ describe('Checklist component', () => {
     const checklistDialog = new ChecklistDialog();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let processUserModel;

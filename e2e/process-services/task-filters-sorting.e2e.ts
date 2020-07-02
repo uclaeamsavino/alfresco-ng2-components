@@ -38,7 +38,7 @@ describe('Task Filters Sorting', () => {
     const taskDetailsPage = new TaskDetailsPage();
     const taskFiltersDemoPage = new TaskFiltersDemoPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let user;

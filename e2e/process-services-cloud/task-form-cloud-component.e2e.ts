@@ -46,7 +46,7 @@ describe('Task form cloud component', () => {
     const taskFormCloudComponent = new TaskFormCloudComponent();
     const widget = new ProcessCloudWidgetPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const tasksService = new TasksService(apiService);
     const queryService = new QueryService(apiService);
     const processDefinitionService = new ProcessDefinitionsService(apiService);

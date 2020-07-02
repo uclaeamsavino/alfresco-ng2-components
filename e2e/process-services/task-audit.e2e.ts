@@ -31,7 +31,7 @@ describe('Task Audit', () => {
     const taskPage = new TasksPage();
     const processServices = new ProcessServicesPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let processUserModel;

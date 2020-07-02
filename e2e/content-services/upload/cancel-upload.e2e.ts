@@ -25,7 +25,7 @@ import { UsersActions } from '../../actions/users.actions';
 
 describe('Upload component', async () => {
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const contentServicesPage = new ContentServicesPage();
     const uploadDialog = new UploadDialogPage();
     const uploadToggles = new UploadTogglesPage();

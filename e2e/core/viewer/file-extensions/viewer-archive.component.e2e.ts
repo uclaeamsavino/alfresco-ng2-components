@@ -32,7 +32,7 @@ describe('Viewer', () => {
 
     let site;
     const acsUser = new UserModel();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

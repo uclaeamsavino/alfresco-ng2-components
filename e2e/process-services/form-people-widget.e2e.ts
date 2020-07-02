@@ -36,7 +36,7 @@ describe('Form widgets - People ', () => {
     const processServiceTabBarPage = new ProcessServiceTabBarPage();
     const widget = new Widget();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     let processUserModel;

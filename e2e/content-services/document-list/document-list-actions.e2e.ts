@@ -44,7 +44,7 @@ describe('Document List Component - Actions', () => {
     const breadCrumbDropdownPage = new BreadCrumbDropdownPage();
     const breadCrumbPage = new BreadcrumbPage();
     const viewerPage = new ViewerPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const uploadActions = new UploadActions(apiService);

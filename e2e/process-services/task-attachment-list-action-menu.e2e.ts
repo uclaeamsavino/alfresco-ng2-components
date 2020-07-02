@@ -37,7 +37,7 @@ describe('Attachment list action menu for tasks', () => {
     const attachmentListPage = new AttachmentListPage();
     const viewerPage = new ViewerPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
 
     const pngFile = new FileModel({

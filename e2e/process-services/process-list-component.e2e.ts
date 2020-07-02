@@ -28,7 +28,7 @@ describe('Process List Test', () => {
     const loginPage = new LoginSSOPage();
     const processListDemoPage = new ProcessListDemoPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const applicationsUtil = new ApplicationsUtil(apiService);
     const usersActions = new UsersActions(apiService);
 

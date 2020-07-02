@@ -25,7 +25,7 @@ describe('About Content Services', () => {
     const navigationBarPage = new NavigationBarPage();
     const aboutPage = new AboutPage();
     let acsUser: UserModel;
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async() => {

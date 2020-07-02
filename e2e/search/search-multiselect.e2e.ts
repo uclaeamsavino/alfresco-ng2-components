@@ -32,7 +32,7 @@ describe('Search Component - Multi-Select Facet', () => {
     const searchFiltersPage = new SearchFiltersPage();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);
 

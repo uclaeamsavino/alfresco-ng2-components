@@ -32,7 +32,7 @@ describe('Create folder directive', () => {
     const metadataViewPage = new MetadataViewPage();
     let acsUser: UserModel;
     const navigationBarPage = new NavigationBarPage();
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

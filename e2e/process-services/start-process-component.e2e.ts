@@ -57,8 +57,8 @@ describe('Start Process Component', () => {
     const selectAppsDialog = new SelectAppsDialog();
     const widget = new Widget();
 
-    const apiService = new ApiService();
-    const apiServiceUserTwo = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
+    const apiServiceUserTwo = new ApiService({ provider: 'BPM' });
 
     let procUserModel: UserModel;
     let secondProcUserModel: UserModel;

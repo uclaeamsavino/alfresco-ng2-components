@@ -33,7 +33,7 @@ import { UsersActions } from '../../actions/users.actions';
 
 describe('Unshare file', () => {
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const loginPage = new LoginSSOPage();
     const contentServicesPage = new ContentServicesPage();
     const contentListPage = contentServicesPage.getDocumentList();

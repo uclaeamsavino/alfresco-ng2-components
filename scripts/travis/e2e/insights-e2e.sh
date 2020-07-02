@@ -2,7 +2,6 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-export PROVIDER='BPM'
 export AUTH_TYPE='BASIC'
 
 cd $DIR/../../../

@@ -63,7 +63,6 @@ let specs = function () {
         specExists(arraySpecs);
     } else {
         const FOLDER = process.env.FOLDER || '';
-        setProvider(FOLDER);
         const specsToRun = FOLDER ? `./${FOLDER}/**/*.e2e.ts` : './**/*.ts';
         arraySpecs = [specsToRun];
     }
@@ -71,26 +70,10 @@ let specs = function () {
     return arraySpecs;
 };
 
-let setProvider = function (folder) {
-    if (folder === 'core') {
-        testConfig.appConfig.provider = 'ALL';
-    } else if (folder === 'content-services') {
-        testConfig.appConfig.provider = 'ECM';
-    } else if (folder === 'process-services') {
-        testConfig.appConfig.provider = 'BPM';
-    } else if (folder === 'insights') {
-        testConfig.appConfig.provider = 'BPM';
-    } else if (folder === 'search') {
-        testConfig.appConfig.provider = 'ECM';
-    } else if (folder === 'process-services-cloud') {
-        testConfig.appConfig.provider = 'BPM';
-    }
-};
-
 let specExists = function (listSpecs) {
     listSpecs.forEach((path) => {
         if (!fs.existsSync(resolve(__dirname, path))) {
-            Logger.error('E2E File not present' + path);
+            Logger.error(`Not valid spec path : ${path} valid path should be for example /search/search-component.e2e.ts`);
         }
     });
 };

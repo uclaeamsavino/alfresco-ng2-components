@@ -49,7 +49,7 @@ describe('Version component permissions', () => {
     const managerUser = new UserModel();
     const fileCreatorUser = new UserModel();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     const newVersionFile = new FileModel({

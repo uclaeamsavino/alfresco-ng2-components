@@ -37,7 +37,7 @@ describe('Login component - Redirect', () => {
     let user;
     let uploadedFolder;
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const uploadActions = new UploadActions(apiService);
     const usersActions = new UsersActions(apiService);
 

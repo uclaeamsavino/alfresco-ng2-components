@@ -35,7 +35,7 @@ describe('Attach Form Component', () => {
     const formFields = new FormFields();
     const navigationBarPage = new NavigationBarPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'BPM' });
     const usersActions = new UsersActions(apiService);
     const applicationService = new ApplicationsUtil(apiService);
 

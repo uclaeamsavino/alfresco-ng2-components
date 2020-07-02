@@ -68,7 +68,7 @@ describe('Content Services Viewer', () => {
         'firstPageText': browser.params.resources.Files.ADF_DOCUMENTS.PPT.first_page_text
     });
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
     const uploadActions = new UploadActions(apiService);
 

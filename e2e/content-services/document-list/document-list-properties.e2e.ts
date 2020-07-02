@@ -29,7 +29,7 @@ describe('Document List Component - Properties', () => {
     const navigationBar = new NavigationBarPage();
 
     let subFolder, parentFolder;
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const uploadActions = new UploadActions(apiService);
     let acsUser = null;
     const usersActions = new UsersActions(apiService);

@@ -37,7 +37,7 @@ describe('Document List - Selection', () => {
         'location': browser.params.resources.Files.ADF_DOCUMENTS.DOCX.file_location
     });
     const displayColumnName = 'Display name';
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ECM' });
     const usersActions = new UsersActions(apiService);
 
     beforeAll(async () => {

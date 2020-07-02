@@ -26,7 +26,7 @@ describe('Header Component', () => {
     const headerPage = new HeaderPage();
     const settingsPage = new SettingsPage();
 
-    const apiService = new ApiService();
+    const apiService = new ApiService({ provider: 'ALL' });
     const usersActions = new UsersActions(apiService);
 
     const acsUser = new UserModel();

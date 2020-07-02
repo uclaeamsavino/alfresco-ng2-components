@@ -30,7 +30,7 @@ describe('People Groups Cloud Component', () => {
         const peopleCloudComponent = new PeopleCloudComponentPage();
         const groupCloudComponentPage = new GroupCloudComponentPage();
 
-        const apiService = new ApiService();
+        const apiService = new ApiService({ provider: 'ALL' });
         const identityService = new IdentityService(apiService);
         const groupIdentityService = new GroupIdentityService(apiService);
 
